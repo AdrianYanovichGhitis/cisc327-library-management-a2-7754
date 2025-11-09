@@ -1,7 +1,7 @@
 import pytest
 from datetime import datetime, timedelta
 
-import library_service
+import services.library_service as library_service
 
 
 def test_calculate_late_fee_for_book_overdue(monkeypatch):
