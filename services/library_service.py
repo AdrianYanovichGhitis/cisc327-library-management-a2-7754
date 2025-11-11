@@ -10,6 +10,7 @@ from database import (
     insert_book, insert_borrow_record, update_book_availability,
     update_borrow_record_return_date, get_all_books, get_patron_borrowed_books
 )
+from services.payment_service import PaymentGateway
 
 def add_book_to_catalog(title: str, author: str, isbn: str, total_copies: int) -> Tuple[bool, str]:
     """
@@ -334,5 +335,5 @@ def refund_late_fee_payment(transaction_id: str, amount: float, payment_gateway:
     except Exception as e:
         return False, f"Refund processing error: {str(e)}"
     
-  
+
        
