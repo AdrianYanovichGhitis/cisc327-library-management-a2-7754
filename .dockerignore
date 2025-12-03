@@ -1,0 +1,53 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+*.pdf
+student_instructions.md
+requirements_specification.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database (will be created fresh in container)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Other
+.env
+.env.local
+
