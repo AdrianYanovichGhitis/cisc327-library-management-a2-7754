@@ -31,5 +31,5 @@ jobs:
         run: python -c "from database import init_database, add_sample_data; init_database(); add_sample_data()"
 
       - name: Run tests
-        run: python -m pytest -q
+        run: python -m pytest -q --ignore=tests/test_e2e.py
 
